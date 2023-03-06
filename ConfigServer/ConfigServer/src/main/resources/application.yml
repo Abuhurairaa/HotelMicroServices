@@ -1,7 +1,6 @@
 server:
   port: 8085
 
-
 spring:
   application:
     name: CONFIG-SERVER
@@ -12,25 +11,3 @@ spring:
         git:
           uri: https://github.com/Abuhurairaa/Hotel-Microservices-Config
           clone-on-start: true
-
-#  cloud:
-#    gateway:
-#      routes:
-#        - id: USER-SERVICE
-#          uri:  lb://USER-SERVICE
-#          predicates:
-#            - Path=/users/**
-#
-#        - id: HOTEL-SERVICE
-#          uri: lb://HOTEL-SERVICE
-#          predicates:
-#            - Path=/hotels/**, /staffs/**
-#
-#        - id: RATING-SERVICE
-#          uri: lb://RATING-SERVICE
-#          predicates:
-#            - Path=/ratings/**
-
-#
-
-
