@@ -6,6 +6,13 @@ spring:
   application:
     name: CONFIG-SERVER
 
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Abuhurairaa/Hotel-Microservices-Config
+          clone-on-start: true
+
 #  cloud:
 #    gateway:
 #      routes:
@@ -24,13 +31,6 @@ spring:
 #          predicates:
 #            - Path=/ratings/**
 
+#
 
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka
 
